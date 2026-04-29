@@ -38,7 +38,7 @@ st.markdown("""
 # -----------------------------
 @st.cache_data
 def load_data():
-    df = pd.read_csv("Gaming_Academic_Performance.csv")
+    df = pd.read_csv("Gaming_Academic_Performance.csv", nrows=2000)
 
     # Clean column names
     df.columns = df.columns.str.strip().str.lower()
